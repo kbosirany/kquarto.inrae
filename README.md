@@ -1,7 +1,7 @@
 # kquarto.inrae
 
 Charte graphique INRAE sous forme d'extension Quarto, pour remplacer les
-templates `inrae` et `inrae-presentation` du package `quarto.r`.
+templates `inrae` et `inrae-presentation` du package [`kquarto.r`](https://github.com/kbosirany/kquarto.r).
 
 **État : les cinq formats se rendent** avec Quarto 1.11.9 (livre HTML, Typst
 et LaTeX ; diapositives reveal.js et Beamer). Les PDF ont été contrôlés à
@@ -49,9 +49,9 @@ chemin du logo et du favicon dans le `_quarto.yml` du livre.
 Puis, dans le document ou le `_quarto.yml` : `format: inrae-html` (ou un des
 quatre autres).
 
-## Ce que cela remplace dans quarto.r
+## Ce que cela remplace dans kquarto.r
 
-| quarto.r | Avec l'extension |
+| kquarto.r | Avec l'extension |
 |---|---|
 | `create_book(template = "inrae")` | `quarto use template kbosirany/kquarto.inrae/exemples/livre` |
 | `create_presentation(template = "inrae-presentation")` | un `.qmd` avec `format: inrae-revealjs` |
