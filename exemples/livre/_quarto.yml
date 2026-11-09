@@ -11,9 +11,9 @@ book:
   chapters:
     - index.qmd
   # logo et favicon : lus dans l'extension, pas copiés dans le livre
-  favicon: _extensions/inrae/favicon-inrae.png
+  favicon: _extensions/kbosirany/inrae/favicon-inrae.png
   sidebar:
-    logo: _extensions/inrae/logo-inrae.png
+    logo: _extensions/kbosirany/inrae/logo-inrae.png
     style: docked
   page-footer:
     left: "INRAE"

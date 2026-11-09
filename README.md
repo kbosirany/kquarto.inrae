@@ -10,7 +10,7 @@ et de fin présents), pas dans un navigateur.
 
 ## Contenu
 
-- `_extensions/inrae/` : la charte, en un seul exemplaire (couleurs, polices,
+- `_extensions/kbosirany/inrae/` : la charte, en un seul exemplaire (couleurs, polices,
   logos, masque des diapositives). Elle fournit cinq formats :
   `inrae-html`, `inrae-typst`, `inrae-pdf`, `inrae-revealjs`, `inrae-beamer`.
 - `exemples/livre/` : un livre HTML + PDF Typst.
@@ -36,6 +36,16 @@ quarto add kbosirany/kquarto.inrae
 quarto update extension kbosirany/inrae
 ```
 
+Ou partir d'un modèle, dans un dossier vide :
+
+```bash
+quarto use template kbosirany/kquarto.inrae/exemples/livre
+quarto use template kbosirany/kquarto.inrae/exemples/diapos
+```
+
+L'extension est installée dans `_extensions/kbosirany/inrae/` : c'est le
+chemin du logo et du favicon dans le `_quarto.yml` du livre.
+
 Puis, dans le document ou le `_quarto.yml` : `format: inrae-html` (ou un des
 quatre autres).
 
@@ -43,11 +53,11 @@ quatre autres).
 
 | quarto.r | Avec l'extension |
 |---|---|
-| `create_book(template = "inrae")` | `quarto use template` ou copie de `exemples/livre/` |
+| `create_book(template = "inrae")` | `quarto use template kbosirany/kquarto.inrae/exemples/livre` |
 | `create_presentation(template = "inrae-presentation")` | un `.qmd` avec `format: inrae-revealjs` |
 | `create_book(formats = "typst")`, `add_pdf_download()` | une ligne `inrae-typst: default` dans `_quarto.yml` |
 | `create_template_*()`, `list_templates_*()`, `remove_template_*()`, `template_dir()`, `shared:` | `quarto add` / `quarto update` |
-| copie du SCSS, des logos et du `.tex` dans chaque livre | rien n'est copié : tout reste dans `_extensions/inrae/` |
+| copie du SCSS, des logos et du `.tex` dans chaque livre | rien n'est copié : tout reste dans `_extensions/kbosirany/inrae/` |
 
 ## Constaté au rendu
 
@@ -62,14 +72,8 @@ quatre autres).
 - Typst prévient que Avenir Next Pro, Calibri et Raleway manquent sur cette
   machine et utilise Liberation Sans, comme le template actuel.
 
-## Reste à vérifier, une fois le dépôt publié
+## Reste à vérifier
 
-1. Installée avec `quarto add kbosirany/kquarto.inrae`, l'extension va dans
-   `_extensions/kbosirany/inrae/` : les chemins `_extensions/inrae/...` du
-   `_quarto.yml` et du `_brand.yml` de l'exemple sont alors à adapter.
-2. `_brand.yml` reste un fichier du projet (8 lignes). Le fournir depuis
+1. `_brand.yml` reste un fichier du projet (8 lignes). Le fournir depuis
    l'extension n'a pas été essayé.
-3. Deux modèles de départ (livre, diapositives) dans un même dépôt :
-   `quarto use template` n'en prend qu'un par dépôt, sauf s'il accepte un
-   sous-dossier.
-4. L'aspect des diapositives reveal.js dans un navigateur.
+2. L'aspect des diapositives reveal.js dans un navigateur.
