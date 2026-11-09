@@ -1,0 +1,7 @@
+# sorties des rendus
+_book/
+.quarto/
+/exemples/diapos/*.html
+/exemples/diapos/*.pdf
+# copié par format-resources (inrae-pdf, inrae-beamer)
+/exemples/*/logo-inrae.png

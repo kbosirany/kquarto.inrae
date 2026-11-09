@@ -1,0 +1,7 @@
+# Préface {.unnumbered}
+
+Ce rapport utilise l'extension Quarto `inrae`.
+
+La page de titre reprend le titre, le sous-titre, les auteurs et la date
+définis dans `_quarto.yml`. Les références citées, par exemple
+[@quarto], sont à ajouter dans `references.bib`.

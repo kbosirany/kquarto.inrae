@@ -1,0 +1,64 @@
+title: INRAE
+author: Kevin Bosirany Orlando
+version: 0.1.0
+quarto-required: ">=1.6.0"
+contributes:
+  formats:
+    # Les chemins sont relatifs à ce dossier : Quarto les résout lui-même.
+    common:
+      lang: fr
+    # Rapport ou livre HTML : `format: inrae-html`
+    html:
+      theme:
+        - cosmo
+        - inrae-charte.scss
+        - inrae-livre.scss
+      toc: true
+      number-sections: true
+      reference-location: margin
+      citation-location: document
+    # PDF avec Typst (fourni avec Quarto) : `format: inrae-typst`
+    typst:
+      toc: true
+      number-sections: true
+      papersize: a4
+      include-in-header: inrae.typ
+    # PDF avec LaTeX : `format: inrae-pdf`
+    pdf:
+      documentclass: scrbook
+      papersize: a4
+      toc: true
+      number-sections: true
+      include-in-header: inrae.tex
+      # copié à côté du document : inrae.tex l'inclut par son nom
+      format-resources:
+        - logo-inrae.png
+    # Diapositives reveal.js, masque PowerPoint INRAE 4:3 :
+    # `format: inrae-revealjs`
+    revealjs:
+      theme:
+        - default
+        - inrae-charte.scss
+        - inrae-slides.scss
+      width: 1280
+      height: 960
+      margin: 0
+      center: false
+      slide-number: c
+      progress: false
+      # les graphiques gardent leur taille : le masque réserve le pied de page
+      auto-stretch: false
+      menu: false
+      embed-resources: true
+      title-slide-attributes:
+        data-background-image: inrae-titre.png
+        data-background-size: cover
+      # `## Merci {.fin-inrae}` : diapositive de fin sur fond vert
+      filters:
+        - fin-inrae.lua
+    # Diapositives PDF (LaTeX) : `format: inrae-beamer`
+    beamer:
+      aspectratio: 169
+      include-in-header: inrae-beamer.tex
+      format-resources:
+        - logo-inrae.png

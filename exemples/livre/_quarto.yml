@@ -1,0 +1,31 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "Titre du rapport"
+  subtitle: "Sous-titre du rapport"
+  author: "Auteur"
+  date: today
+  date-format: long
+  chapters:
+    - index.qmd
+  # logo et favicon : lus dans l'extension, pas copiés dans le livre
+  favicon: _extensions/inrae/favicon-inrae.png
+  sidebar:
+    logo: _extensions/inrae/logo-inrae.png
+    style: docked
+  page-footer:
+    left: "INRAE"
+    right: "Rapport rédigé avec [Quarto](https://quarto.org)"
+  # icône « Download PDF » de la version HTML
+  downloads: [pdf]
+
+bibliography: references.bib
+link-citations: true
+
+format:
+  inrae-html: default
+  inrae-typst: default
+  # PDF avec LaTeX à la place de Typst :
+  # inrae-pdf: default

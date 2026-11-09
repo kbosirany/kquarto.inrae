@@ -1,0 +1,31 @@
+/*-- scss:rules --*/
+
+
+// Page de titre
+.quarto-title-banner,
+#title-block-header {
+  border-bottom: 4px solid $inrae-vert;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.quarto-title .title {
+  color: $inrae-vert-fonce;
+  font-weight: 800;
+}
+
+.quarto-title .subtitle {
+  color: $inrae-gris;
+}
+
+// Logo de la barre latérale : zone de protection d'une demi-hauteur et
+// largeur minimale de 100 px (charte INRAE)
+.sidebar-logo {
+  min-width: 100px;
+  max-width: 160px;
+  margin: 0.5rem auto 1rem auto;
+}
+
+.callout-note {
+  border-left-color: $inrae-vert !important;
+}
