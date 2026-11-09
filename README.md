@@ -1,4 +1,4 @@
-# quarto-inrae
+# kquarto.inrae
 
 Charte graphique INRAE sous forme d'extension Quarto, pour remplacer les
 templates `inrae` et `inrae-presentation` du package `quarto.r`.
@@ -30,7 +30,7 @@ quarto render exemples/diapos/diapos.qmd
 
 ```bash
 # ajouter la charte à un projet existant
-quarto add kbosirany/quarto-inrae
+quarto add kbosirany/kquarto.inrae
 
 # la mettre à jour quand la charte change
 quarto update extension kbosirany/inrae
@@ -64,7 +64,7 @@ quatre autres).
 
 ## Reste à vérifier, une fois le dépôt publié
 
-1. Installée avec `quarto add kbosirany/quarto-inrae`, l'extension va dans
+1. Installée avec `quarto add kbosirany/kquarto.inrae`, l'extension va dans
    `_extensions/kbosirany/inrae/` : les chemins `_extensions/inrae/...` du
    `_quarto.yml` et du `_brand.yml` de l'exemple sont alors à adapter.
 2. `_brand.yml` reste un fichier du projet (8 lignes). Le fournir depuis
