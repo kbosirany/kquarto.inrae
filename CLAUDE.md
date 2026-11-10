@@ -38,8 +38,9 @@ l'analyse qui a mené à cette extension.
 - Rendus vérifiés avec Quarto 1.11.9 pour les cinq formats, et installation
   depuis GitHub (`quarto add`, `quarto use template` sur les deux exemples).
 - Pas vérifié : l'aspect des diapositives reveal.js dans un navigateur.
-- Pas de licence. Le dépôt est public et contient les logos INRAE, qui ne
-  sont pas à relicencier.
+- Licence AGPL version 3 (`LICENSE`), choisie le 2026-11-10, pour le code
+  et les exemples. Les logos et visuels INRAE en sont exclus (section
+  « Licence » du README) : ils ne sont pas à relicencier.
 
 ## Vérifier un changement
 

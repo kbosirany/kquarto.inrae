@@ -77,3 +77,13 @@ quatre autres).
 1. `_brand.yml` reste un fichier du projet (8 lignes). Le fournir depuis
    l'extension n'a pas été essayé.
 2. L'aspect des diapositives reveal.js dans un navigateur.
+
+## Licence
+
+Le code de l'extension (YAML, SCSS, LaTeX, Typst, Lua) et les exemples sont
+sous licence [GNU AGPL version 3](LICENSE).
+
+Les logos et les visuels INRAE (`logo-inrae.png`, `favicon-inrae.png`,
+`inrae-titre.png`, `inrae-titre-vert.png`) restent la propriété d'INRAE : ils
+ne sont pas couverts par cette licence et s'utilisent selon la charte
+graphique de l'institut.
